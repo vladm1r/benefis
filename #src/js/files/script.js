@@ -1,3 +1,14 @@
+//header-logo color
+let wrapperBody = document.querySelector('.wrapper');
+if (wrapperBody.classList.contains('_dark-header')) {
+	let headerLogo = document.querySelector('.header__logo');
+	let headerLogoImg = headerLogo.querySelector('img');
+	let headerLogoImgSourse = headerLogo.querySelector('source');
+	headerLogoImgSourse.remove();
+	headerLogoImg.setAttribute('src', headerLogoImg.getAttribute('data-alt'));
+	headerLogoImg.removeAttribute('data-alt');
+}
+
 /* SLIDE UP */
 let slideUp = (target, duration = 500) => {
 

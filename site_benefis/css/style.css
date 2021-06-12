@@ -1477,36 +1477,13 @@ body.ie ._ibg img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 160px;
+  width: 100%;
 }
 
-.logo__icon {
-  max-width: 56px;
-  margin: 0px 10px 0px 0px;
-}
-
-.logo__icon img {
+.logo img {
   max-width: 100%;
-}
-
-.logo__text {
-  color: #a01f1f;
-  text-transform: uppercase;
-  font-weight: 600;
-  text-align: left;
-}
-
-.logo__text_top {
-  display: block;
-  margin: 0px 0px 0px 0px;
-  font-size: 15px;
-  line-height: 22px;
-  letter-spacing: 0.75px;
-}
-
-.logo__text_bottom {
-  font-size: 10px;
-  display: block;
-  letter-spacing: 0.57px;
+  width: 180px;
 }
 
 .menu__list {
@@ -1620,27 +1597,18 @@ body.ie ._ibg img {
   display: none;
 }
 
-.teather-page .header,
-.orator-page .header,
-.children-page .header,
-.courses-page .header {
+._dark-header .header {
   -webkit-box-shadow: 0 0 11px 2px rgba(66, 60, 45, 0.5);
           box-shadow: 0 0 11px 2px rgba(66, 60, 45, 0.5);
   background-color: #0e8191;
   color: #fff;
 }
 
-.teather-page .header__logo > .logo__text,
-.orator-page .header__logo > .logo__text,
-.children-page .header__logo > .logo__text,
-.courses-page .header__logo > .logo__text {
+._dark-header .header__logo > .logo__text {
   color: #fff;
 }
 
-.teather-page .header > .phone__callback-link,
-.orator-page .header > .phone__callback-link,
-.children-page .header > .phone__callback-link,
-.courses-page .header > .phone__callback-link {
+._dark-header .header > .phone__callback-link {
   color: #fff;
   border-bottom: 1px dotted #fff;
 }
@@ -4941,7 +4909,7 @@ footer {
 }
 
 ._inner .intro__content {
-  padding: 72px 0 0 0;
+  padding: 80px 0 0 0;
 }
 
 .teachers {
@@ -6308,10 +6276,6 @@ footer {
     margin: 0px 0px 29px 0px;
   }
 
-  .logo__icon {
-    max-width: 44px;
-  }
-
   .menu__link {
     font-size: 16px;
   }
@@ -6321,10 +6285,7 @@ footer {
     line-height: 16px;
   }
 
-  .teather-page .header__logo,
-  .orator-page .header__logo,
-  .children-page .header__logo,
-  .courses-page .header__logo {
+  ._dark-header .header__logo {
     margin: 0px 0px 44px 0px;
   }
 

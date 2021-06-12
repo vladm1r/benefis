@@ -543,6 +543,17 @@ DynamicAdapt.prototype.arraySort = function (arr) {
 
 const da = new DynamicAdapt("max");
 da.init();
+//header-logo color
+let wrapperBody = document.querySelector('.wrapper');
+if (wrapperBody.classList.contains('_dark-header')) {
+	let headerLogo = document.querySelector('.header__logo');
+	let headerLogoImg = headerLogo.querySelector('img');
+	let headerLogoImgSourse = headerLogo.querySelector('source');
+	headerLogoImgSourse.remove();
+	headerLogoImg.setAttribute('src', headerLogoImg.getAttribute('data-alt'));
+	headerLogoImg.removeAttribute('data-alt');
+}
+
 /* SLIDE UP */
 let slideUp = (target, duration = 500) => {
 
@@ -684,8 +695,6 @@ if (reviewTexts.length > 0) {
 }
 
 // articles-category-list__item adapt
-// let body = document.querySelector('body');
-// let w = body.clientWidth;
 
 let articleCategoryListItems = document.querySelectorAll('.articles-category-list__item');
 
