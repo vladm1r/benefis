@@ -143,6 +143,16 @@ if (vidPlayBtn) {
 		video.play();
 	});
 }
+//article video
+let articleVidPlayBtn = document.querySelector('.article-video__play-button');
+if (articleVidPlayBtn) {
+	let video = document.querySelector('.article-video__video');
+	let videoOverlay = document.querySelector('.article-video__overlay');
+	articleVidPlayBtn.addEventListener("click", function (e) {
+		videoOverlay.classList.add('_hide');
+		video.play();
+	});
+}
 
 //simple bar
 let reviewTexts = document.querySelectorAll('.reviews-item__text-cont');
