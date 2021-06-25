@@ -640,6 +640,72 @@ if (faqBtns.length > 0) {
 	}
 }
 
+//req btn
+let reqBtn = document.querySelector('.requisites__btn');
+if (reqBtn) {
+	let reqBody = document.querySelector('.requisites__body');
+	reqBtn.addEventListener("click", function (e) {
+		reqBody.classList.toggle('_active');
+		reqBtn.classList.toggle('_active');
+		slideToggle(reqBody, 100);
+	});
+}
+
+//payment change
+let cartBtn = document.querySelector('.payment__type-item_cart');
+let cartBtnBody = document.querySelector('.payment__type-item-cont_cart');
+let cartFormCont = document.querySelector('.payment__data-cart-cont');
+
+let sberBtn = document.querySelector('.payment__type-item_sber');
+let sberBtnBody = document.querySelector('.payment__type-item-cont_sber');
+let sberFormCont = document.querySelector('.payment__data-sber-cont');
+
+if (cartBtn) {
+	cartBtn.addEventListener("click", function (e) {
+		cartBtnBody.classList.add('_active');
+		cartFormCont.classList.add('_active');
+		sberBtnBody.classList.remove('_active');
+		sberFormCont.classList.remove('_active');
+	});
+}
+if (sberBtn) {
+	sberBtn.addEventListener("click", function (e) {
+		cartBtnBody.classList.remove('_active');
+		cartFormCont.classList.remove('_active');
+		sberBtnBody.classList.add('_active');
+		sberFormCont.classList.add('_active');
+	});
+}
+
+// payment sum
+let paymentAdultBtns = document.querySelectorAll('.sum-form__item_adult');
+if (paymentAdultBtns.length > 0) {
+	for (let index = 0; index < paymentAdultBtns.length; index++) {
+		const paymentAdultBtn = paymentAdultBtns[index];
+		paymentAdultBtn.addEventListener("click", function (e) {
+			for (let index = 0; index < paymentAdultBtns.length; index++) {
+				const paymentAdultBtn = paymentAdultBtns[index];
+				paymentAdultBtn.classList.remove('_active');
+			}
+			paymentAdultBtn.classList.add('_active');
+		});
+	}
+}
+
+let paymentChildBtns = document.querySelectorAll('.sum-form__item_children');
+if (paymentChildBtns.length > 0) {
+	for (let index = 0; index < paymentChildBtns.length; index++) {
+		const paymentChildBtn = paymentChildBtns[index];
+		paymentChildBtn.addEventListener("click", function (e) {
+			for (let index = 0; index < paymentChildBtns.length; index++) {
+				const paymentChildBtn = paymentChildBtns[index];
+				paymentChildBtn.classList.remove('_active');
+			}
+			paymentChildBtn.classList.add('_active');
+		});
+	}
+}
+
 // menu__arrow
 let menuArrows = document.querySelectorAll('.menu__arrow');
 if (menuArrows.length > 0) {

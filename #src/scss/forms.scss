@@ -69,7 +69,6 @@
 	// .select__title
 	&__title {
 		color: #000;
-		border: 1px solid #d9d9d9;
 		background-color: #fff;
 		cursor: pointer;
 		border-radius: 4px;
@@ -80,9 +79,9 @@
 	// .select__value
 	&__value {
 		display: flex;
-		font-size: 14px;
-		height: 30px;
-		padding: 0px 15px;
+		font-size: 16px;
+		height: 55px;
+		padding: 0px 30px;
 		align-items: center;
 		justify-content: space-between;
 		flex-direction: row-reverse;
@@ -97,9 +96,9 @@
 			content: "";
 			display: inline-block;
 			transition: all 0.3s ease 0s;
-			width: 11px;
-			height: 7px;
-			background: url("../img/icons/select.svg") center / 100% no-repeat;
+			width: 25px;
+			height: 25px;
+			background: url("../img/icons/select.png") center / 100% no-repeat;
 		}
 	}
 	&__input {
@@ -112,29 +111,32 @@
 		color: #000;
 		display: none;
 		position: absolute;
-		top: 29px;
+		top: 54px;
 		border-radius: 0 0 4px 4px;
 		min-width: 100%;
-		left: 0;
 		background-color: #fff;
 		border-top: 0;
 		border: 1px solid #d9d9d9;
 		border-top: 0;
-		font-size: 14px;
-		padding: 10px 0px 5px 0px;
+		font-size: 16px;
+		padding: 0px 0px 0px 0px;
 		@media (max-width: $md2+px) {
-			font-size: 18px;
+			font-size: 16px;
+			line-height: 120%;
 		}
 	}
 	// .select__option
 	&__option {
 		cursor: pointer;
-		padding: 5px 15px;
+		padding: 20px 30px;
 		margin: 0px 0px 0px 0px;
 		@media (min-width: 992px) {
 			&:hover {
 				background: #d9d9d9;
 			}
+		}
+		@media (max-width: $md3+px) {
+			padding: 13px 30px;
 		}
 	}
 	&._active {
@@ -178,7 +180,9 @@ textarea {
 }
 textarea.input {
 	resize: none;
-	padding: 0px 0px;
+	padding: 20px 30px;
+	height: 100%;
+	border-radius: 28px !important;
 }
 //</INPUT>====================================================================================================
 
