@@ -615,18 +615,21 @@ textarea.input {
   padding: 14px 30px;
 }
 
-.text {
+.text,
+.text_block p {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.72px;
   margin: 0px 0px 10px 0px;
 }
 
-.text:last-child {
+.text:last-child,
+.text_block p:last-child {
   margin: 0px 0px 0px 0px;
 }
 
-.text b {
+.text b,
+.text_block p b {
   font-weight: 600;
 }
 
@@ -2960,7 +2963,7 @@ footer {
 }
 
 .sidelinks {
-  position: absolute;
+  position: fixed;
   z-index: 100;
   width: 100%;
   height: auto;
@@ -6676,6 +6679,14 @@ footer {
   text-decoration: underline;
 }
 
+._index .intro__tip-text {
+  color: #000;
+}
+
+._index .intro__tip-icon {
+  margin: 0px 10px 0px 0px;
+}
+
 @media (min-width: 768px) {
   .articles-item_big .articles-item__banner {
     min-height: 413px;
@@ -9641,6 +9652,16 @@ footer {
 
   .sum-form__btn-text {
     padding: 0;
+  }
+
+  ._index .intro__tip-row {
+    margin: 20px 0 0 0;
+  }
+
+  ._index .intro__tip-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
