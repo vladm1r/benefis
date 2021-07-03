@@ -60,6 +60,9 @@
 		@media (max-width: $md2+px) {
 			order: 3;
 		}
+		@media (max-width: $md3+px) {
+			color: #000;
+		}
 	}
 	// .header__phone
 	&__phone {
@@ -327,7 +330,7 @@
 	}
 	.header__logo {
 		@media (max-width: $md3+px) {
-			margin: 0px 0px 44px 0px;
+			margin: 0px 0px 30px 0px;
 		}
 	}
 }

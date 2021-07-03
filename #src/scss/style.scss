@@ -271,7 +271,7 @@ body {
 		@media (max-width: $md3+px) {
 			max-width: 330px;
 			justify-content: space-between;
-			margin: 80px 0px 0px 0px;
+			margin: 30px 0px 0px 0px;
 		}
 	}
 	// .intro__tip-item
@@ -1706,6 +1706,14 @@ body {
 		}
 		@media (max-width: $md3+px) {
 			display: none;
+		}
+	}
+}
+.teather-page {
+	.intro__img-m {
+		@media (max-width: $md3+px) {
+			right: -180px;
+			top: 200px;
 		}
 	}
 }

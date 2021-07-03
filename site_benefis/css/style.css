@@ -7915,6 +7915,10 @@ footer {
     margin: 0px 0px 29px 0px;
   }
 
+  .header__menu {
+    color: #000;
+  }
+
   .menu__link {
     font-size: 16px;
   }
@@ -7925,7 +7929,7 @@ footer {
   }
 
   ._dark-header .header__logo {
-    margin: 0px 0px 44px 0px;
+    margin: 0px 0px 30px 0px;
   }
 
   html._touch .menu__arrow {
@@ -8078,7 +8082,7 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 80px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
   }
 
   .intro__tip-item {
@@ -8438,6 +8442,11 @@ footer {
 
   .orator-page .intro__img {
     display: none;
+  }
+
+  .teather-page .intro__img-m {
+    right: -180px;
+    top: 200px;
   }
 
   .numbers {
