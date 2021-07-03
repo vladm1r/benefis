@@ -3468,6 +3468,9 @@ body {
 			width: 100%;
 			justify-content: center;
 		}
+		@media (max-width: $md3+px) {
+			max-width: 400px;
+		}
 	}
 	// .teacher-slider__photo-cont
 	&__photo-cont {
@@ -3528,7 +3531,7 @@ body {
 	&__slider-nav {
 		display: flex;
 		position: absolute;
-		bottom: 30px;
+		top: 500px;
 		right: 40px;
 		align-items: center;
 		@media (max-width: $md1+px) {
@@ -3536,9 +3539,10 @@ body {
 		}
 		@media (max-width: $md3+px) {
 			right: 20px;
+			top: 320px;
 		}
 		@media (max-width: $md4+px) {
-			bottom: -50px;
+			top: 390px;
 			right: 50%;
 			transform: translate(50%, 0);
 		}
@@ -4196,7 +4200,7 @@ body {
 				margin: 0px 10px 0px 0px;
 				width: 18px;
 				height: 18px;
-				background: url("../img/icons/redstar.png") center/cover no-repeat;
+				background: url("../img/icons/yellowstar.png") center/cover no-repeat;
 			}
 		}
 	}
@@ -4342,7 +4346,7 @@ body {
 
 //===================================================================================================================================
 .courses-ch-online {
-	padding: 100px 0 80px;
+	padding: 50px 0 80px;
 	@media (max-width: $md3+px) {
 		padding: 20px 0 30px;
 	}

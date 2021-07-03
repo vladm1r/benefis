@@ -137,7 +137,7 @@ var teacherInfoSlider = new Swiper('.teacher-slider__info-slider', {
 	// observeParents: true,
 	slidesPerView: 1,
 	// spaceBetween: 0,
-	// autoHeight: true,
+	autoHeight: true,
 	// speed: 800,
 	//touchRatio: 0,
 	//simulateTouch: false,

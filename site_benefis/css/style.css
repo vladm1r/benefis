@@ -319,6 +319,7 @@ textarea.input {
   padding: 20px 30px;
   height: 100%;
   border-radius: 28px !important;
+  min-height: 150px;
 }
 
 .checkbox {
@@ -1461,9 +1462,9 @@ body.ie ._ibg img {
   top: 0;
   left: 0;
   z-index: 10;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
 }
 
 .header._scroll {
@@ -4268,7 +4269,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  bottom: 30px;
+  top: 500px;
   right: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -4754,7 +4755,7 @@ footer {
 }
 
 ._no-webp .intro__willknow-list li::before{
-  background: url("../img/icons/redstar.png") center/cover no-repeat; }
+  background: url("../img/icons/yellowstar.png") center/cover no-repeat; }
 
 .intro__willknow-list li::before {
   content: "";
@@ -4863,7 +4864,7 @@ footer {
 }
 
 .courses-ch-online {
-  padding: 100px 0 80px;
+  padding: 50px 0 80px;
 }
 
 .courses-ch-online__container {
@@ -8940,6 +8941,10 @@ footer {
     margin: 0px auto 20px auto;
   }
 
+  .teacher-slider__content {
+    max-width: 400px;
+  }
+
   .teacher-slider__photo-item {
     height: 371px;
   }
@@ -8958,6 +8963,7 @@ footer {
 
   .teacher-slider__slider-nav {
     right: 20px;
+    top: 320px;
   }
 
   .teacher-slider__info-cont-decor {
@@ -9855,7 +9861,7 @@ footer {
   }
 
   .teacher-slider__slider-nav {
-    bottom: -50px;
+    top: 390px;
     right: 50%;
     -webkit-transform: translate(50%, 0);
         -ms-transform: translate(50%, 0);
@@ -9987,7 +9993,7 @@ footer {
 
 ._webp .teather-location__about-cont{ background: url(../img/bgs/teather/5.webp) center/cover no-repeat, #ffffff; }
 
-._webp .intro__willknow-list li::before{ background: url(../img/icons/redstar.webp) center/cover no-repeat; }
+._webp .intro__willknow-list li::before{ background: url(../img/icons/yellowstar.webp) center/cover no-repeat; }
 
 ._webp ._articles, ._webp ._articles-category{ background: url(../img/bgs/articles/fon.webp); }
 
