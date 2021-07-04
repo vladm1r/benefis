@@ -678,20 +678,20 @@ if (sberBtn) {
 }
 
 // payment sum
-let paymentAdultBtns = document.querySelectorAll('.sum-form__item_adult');
-if (paymentAdultBtns.length > 0) {
-	for (let index = 0; index < paymentAdultBtns.length; index++) {
-		const paymentAdultBtn = paymentAdultBtns[index];
-		paymentAdultBtn.addEventListener("click", function (e) {
-			for (let index = 0; index < paymentAdultBtns.length; index++) {
-				const paymentAdultBtn = paymentAdultBtns[index];
-				paymentAdultBtn.classList.remove('_active');
+let paymentBtns = document.querySelectorAll('.sum-form__item');
+if (paymentBtns.length > 0) {
+	for (let index = 0; index < paymentBtns.length; index++) {
+		const paymentBtn = paymentBtns[index];
+		paymentBtn.addEventListener("click", function (e) {
+			for (let index = 0; index < paymentBtns.length; index++) {
+				const paymentBtn = paymentBtns[index];
+				paymentBtn.classList.remove('_active');
 			}
-			paymentAdultBtn.classList.add('_active');
+			paymentBtn.classList.add('_active');
 		});
 	}
 }
-
+/*
 let paymentChildBtns = document.querySelectorAll('.sum-form__item_children');
 if (paymentChildBtns.length > 0) {
 	for (let index = 0; index < paymentChildBtns.length; index++) {
@@ -705,7 +705,7 @@ if (paymentChildBtns.length > 0) {
 		});
 	}
 }
-
+*/
 // menu__arrow
 let menuArrows = document.querySelectorAll('.menu__arrow');
 if (menuArrows.length > 0) {

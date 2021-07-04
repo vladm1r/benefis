@@ -6553,6 +6553,7 @@ footer {
 }
 
 .sum-form__item-title span {
+  white-space: nowrap;
   color: #fdc94e;
 }
 
