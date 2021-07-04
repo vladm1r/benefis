@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
 @@include('_head.html',{
 "title":"Статья"
@@ -5,6 +6,34 @@
 
 <body>
 	<div class="wrapper _inner _article">
+		<div class="article-head-promo">
+			<div class="article-head-promo__container _container">
+				<div class="article-head-promo__img">
+					<img src="img/content/article-promo-top.png" alt="">
+				</div>
+				<div class="article-head-promo__row">
+					<div class="article-head-promo__text-col">
+						<p class="article-head-promo__title">
+							Пройди новый <span>курс</span> по актерскому мастерству
+						</p>
+						<p class="article-head-promo__undertitle">
+							Преодолей страх публичных выступлений <span>за 5 недель</span>
+						</p>
+					</div>
+					<div class="article-head-promo__date-col">
+						<div class="article-head-promo__date">
+							<p class="article-head-promo__date-title">
+								4 апреля
+							</p>
+							<p class="article-head-promo__date-undertitle">
+								Старт программы
+							</p>
+						</div>
+						<a href="#booking" class="_popup-link article-head-promo__btn btn">Участвовать</a>
+					</div>
+				</div>
+			</div>
+		</div>
 		@@include('_header.html',{})
 		<main class="page">
 			<div class="intro">
@@ -104,7 +133,7 @@
 						<span class="title__marker">Посмотрите видео</span> “Как научиться плакать без причины”
 					</h2>
 					<div class="article-video__video-cont">
-						<video class="article-video__video" width="100%" controls preload="metadata" playsinline>
+						<video class="article-video__video" controls preload="metadata" playsinline>
 							<source src="img/video.mp4" type="video/mp4" />
 						</video>
 						<div class="article-video__overlay _ibg">
@@ -127,7 +156,7 @@
 					</h2>
 					<p class="article-girl__undertitle">Этому и другим навыкам мы
 						научим на нашем актерском курсе</p>
-					<a href="#" class="article-girl__btn btn">
+					<a href="#booking" class="_popup-link article-girl__btn btn">
 						Узнать подробнее <span class="btn__arrow"></span>
 					</a>
 				</div>
@@ -138,7 +167,7 @@
 						<div class="article-feedback__row">
 							<div class="article-feedback__title-cont">
 								<p class="article-feedback__title">
-									Поделитесь своим мнением о статье
+									Поделитесь своим мнением о&nbsp;статье
 								</p>
 							</div>
 							<div class="article-feedback__item-list">

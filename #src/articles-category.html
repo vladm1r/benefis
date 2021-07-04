@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
 @@include('_head.html',{
 "title":"Статьи Категория"
@@ -5,6 +6,34 @@
 
 <body>
 	<div class="wrapper _inner _articles-category">
+		<div class="article-head-promo">
+			<div class="article-head-promo__container _container">
+				<div class="article-head-promo__img">
+					<img src="img/content/article-promo-top.png" alt="">
+				</div>
+				<div class="article-head-promo__row">
+					<div class="article-head-promo__text-col">
+						<p class="article-head-promo__title">
+							Пройди новый <span>курс</span> по актерскому мастерству
+						</p>
+						<p class="article-head-promo__undertitle">
+							Преодолей страх публичных выступлений <span>за 5 недель</span>
+						</p>
+					</div>
+					<div class="article-head-promo__date-col">
+						<div class="article-head-promo__date">
+							<p class="article-head-promo__date-title">
+								4 апреля
+							</p>
+							<p class="article-head-promo__date-undertitle">
+								Старт программы
+							</p>
+						</div>
+						<a href="#booking" class="_popup-link article-head-promo__btn btn">Участвовать</a>
+					</div>
+				</div>
+			</div>
+		</div>
 		@@include('_header.html',{})
 		<main class="page">
 			<div class="intro">
@@ -252,21 +281,21 @@
 						<div class="articles-list__pagination">
 							<div
 								class="articles-list__pagination-item articles-list__pagination-arrow articles-list__pagination-arrow_prev">
-								< </div>
-									<div class="articles-list__pagination-bullets">
-										<div class="articles-list__pagination-item articles-list__pagination-bullet _active">1
-										</div>
-										<div class="articles-list__pagination-item articles-list__pagination-bullet">2</div>
-										<div class="articles-list__pagination-item articles-list__pagination-bullet">3</div>
-									</div>
-									<div
-										class="articles-list__pagination-item articles-list__pagination-arrow articles-list__pagination-arrow_next">
-										>
-									</div>
+							</div>
+							<div class="articles-list__pagination-bullets">
+								<div class="articles-list__pagination-item articles-list__pagination-bullet _active">1
+								</div>
+								<div class="articles-list__pagination-item articles-list__pagination-bullet">2</div>
+								<div class="articles-list__pagination-item articles-list__pagination-bullet">3</div>
+							</div>
+							<div
+								class="articles-list__pagination-item articles-list__pagination-arrow articles-list__pagination-arrow_next">
+
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
 		</main>
 		@@include('_footer.html',{})
 	</div>

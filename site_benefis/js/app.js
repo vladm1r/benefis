@@ -2059,6 +2059,7 @@ function scroll_scroll() {
 		if (src_value > 500) {
 			if (!header.classList.contains('_scroll')) {
 				header.classList.add('_scroll');
+				header.classList.add('_lp');
 				if (wrapperBody.classList.contains('_dark-header')) {
 					changeHeaderLogo();
 				}
@@ -2066,6 +2067,7 @@ function scroll_scroll() {
 		} else {
 			if (header.classList.contains('_scroll')) {
 				header.classList.remove('_scroll');
+				header.classList.remove('_lp');
 				if (wrapperBody.classList.contains('_dark-header')) {
 					changeHeaderLogo();
 				}
