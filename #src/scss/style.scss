@@ -2437,91 +2437,141 @@ body {
 .start {
 	padding: 90px 0 60px 0;
 	@media (max-width: $md3+px) {
-		padding: 0px 0px 0px 0px;
+		padding: 40px 0;
 	}
 	// .start__container
 	&__container {
-		position: relative;
 	}
-	// .start__bg
-	&__bg {
-		position: absolute;
-		width: 568px;
-		top: -10px;
-		right: 0px;
-		z-index: -1;
-		@media (max-width: $md3+px) {
-			width: 768px;
-			top: 20px;
-			right: -330px;
-		}
-		img {
-			max-width: 100%;
-		}
-	}
-	// .start__img
-	&__img {
-		position: absolute;
-		max-width: 541px;
-		top: -90px;
-		right: 0px;
+	// .start__row
+	&__row {
+		display: flex;
+		margin: 0 -15px;
 		@media (max-width: $md2+px) {
-			max-width: 300px;
-			top: 50px;
-			right: -50px;
+			flex-wrap: wrap;
+			margin: 0;
 		}
-		@media (max-width: $md3+px) {
-			max-width: 227px;
-			top: unset;
-			bottom: -150px;
-			right: 0;
+	}
+	// .start__col
+	&__col {
+		flex: 0 1 50%;
+		padding: 0 15px;
+		@media (max-width: $md2+px) {
+			flex: 1 1 100%;
 		}
-		img {
-			max-width: 100%;
+		&:nth-child(2) {
+			padding: 40px 15px 0px 15px;
+			@media (max-width: $md2+px) {
+				padding: 0;
+				margin: 40px 0px 0px 0px;
+			}
+			@media (max-width: $md3+px) {
+				margin: 30px 0px 0px 0px;
+			}
 		}
 	}
 	// .start__title
 	&__title {
 		text-align: left;
-		margin: 0px 0px 39px 0px;
+		margin: 0px 0px 42px 0px;
+		@media (max-width: $md2+px) {
+			text-align: center;
+		}
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 25px 0px;
+		}
+	}
+	// .start__undertitle
+	&__undertitle {
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 600;
+		letter-spacing: 0.045em;
+		color: #151313;
+		margin: 0px 0px 21px 0px;
+		@media (max-width: $md3+px) {
+			font-size: 16px;
+			margin: 0px 0px 20px 0px;
+		}
 	}
 	// .start__list
 	&__list {
-		max-width: 527px;
+		margin: 0px 0px 17px 0px;
 	}
-	// .start__list-item
-	&__list-item {
-		padding: 0px 0px 0px 50px;
+	// .start__author
+	&__author {
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 400;
+		font-style: italic;
+		letter-spacing: 0.045em;
+		color: #151313;
+	}
+	&__img-cont {
 		position: relative;
-		margin: 0px 0px 10px 0px;
+		@media (max-width: $md2+px) {
+			max-width: 500px;
+			margin: 0px auto;
+		}
 		&::before {
 			content: "";
 			position: absolute;
-			top: 5px;
+			width: 100%;
+			height: 100%;
+			top: 0;
 			left: 0;
-			width: 29px;
-			height: 29px;
-			background: url("../img/icons/star.png") center center no-repeat;
+			z-index: -1;
+			background-color: #e3fcff;
+			border-radius: 20px;
+			transform: rotate(-5deg);
 		}
-		&:nth-child(even)::before {
-			transform: rotate(100deg);
-		}
-		// .start__list-item_marker
-		&_marker {
-			color: #fdc94d;
-			font-weight: 700;
+	}
+	// .start__img
+	&__img {
+		border-radius: 20px;
+		overflow: hidden;
+		min-height: 350px;
+		@media (max-width: $md3+px) {
+			min-height: 280px;
 		}
 	}
 }
-
 //===================================================================================================================================
 .franchise-video {
 	padding: 70px 0 50px 0;
 	@media (max-width: $md3+px) {
-		padding: 150px 0px 30px 0px;
+		padding: 30px 0px 30px 0px;
 	}
 	// .franchise-video__container
 	&__container {
+		position: relative;
+	}
+	// .franchise-partners__bg-1
+	&__bg-1 {
+		position: absolute;
+		max-width: 860px;
+		top: -310px;
+		left: -500px;
+		z-index: -1;
+		@media (max-width: $md3+px) {
+			left: -700px;
+		}
+		img {
+			max-width: 100%;
+		}
+	}
+	// .franchise-partners__bg-2
+	&__bg-2 {
+		position: absolute;
+		max-width: 1082px;
+		top: -300px;
+		right: -730px;
+		z-index: -1;
+		@media (max-width: $md3+px) {
+			right: -950px;
+		}
+		img {
+			max-width: 100%;
+		}
 	}
 	// .franchise-video__row
 	&__row {
@@ -2641,141 +2691,7 @@ body {
 	}
 }
 //===================================================================================================================================
-.franchise-partners {
-	padding: 70px 0 50px;
-	// .franchise-partners__container
-	&__container {
-		position: relative;
-	}
-	// .franchise-partners__bg-1
-	&__bg-1 {
-		position: absolute;
-		max-width: 860px;
-		top: -110px;
-		left: -500px;
-		z-index: -1;
-		@media (max-width: $md3+px) {
-			left: -700px;
-		}
-		img {
-			max-width: 100%;
-		}
-	}
-	// .franchise-partners__bg-2
-	&__bg-2 {
-		position: absolute;
-		max-width: 1082px;
-		top: -100px;
-		right: -730px;
-		z-index: -1;
-		@media (max-width: $md3+px) {
-			right: -950px;
-		}
-		img {
-			max-width: 100%;
-		}
-	}
-	// .franchise-partners__title
-	&__title {
-		margin: 0px 0px 41px 0px;
-	}
-	// .franchise-partners__list
-	&__list {
-	}
-	// .franchise-partners__item
-	&__item {
-		display: flex;
-		align-items: center;
-		margin: -60px 0px 0px 0px;
-		@media (max-width: $md2+px) {
-			margin: 0px 0px 0px 0px;
-		}
-		@media (max-width: $md3+px) {
-			margin: 15px 0px 0px 0px;
-		}
-		&:first-child {
-			margin: 0;
-		}
-		&:nth-child(even) {
-			flex-direction: row-reverse;
-			.franchise-partners__item-info {
-				margin: 0px 30px 0px 0px;
-				@media (max-width: $md3+px) {
-					margin: 0px 14px 0px 0px;
-				}
-			}
-		}
-	}
-	// .franchise-partners__item-avatar
-	&__item-avatar {
-		width: 250px;
-		height: 250px;
-		border-radius: 20px;
-		overflow: hidden;
-		@media (max-width: $md3+px) {
-			width: 170px;
-			height: 170px;
-			flex-shrink: 0;
-		}
-		@media (max-width: $md4+px) {
-			width: 140px;
-			height: 140px;
-		}
-	}
-	// .franchise-partners__item-info
-	&__item-info {
-		margin: 0 0 0 30px;
-		box-shadow: 0 0 11px 2px rgba(66, 60, 45, 0.16);
-		border-radius: 20px;
-		background-color: #ffffff;
-		max-width: 315px;
-		width: 100%;
-		overflow: hidden;
-		@media (max-width: $md3+px) {
-			margin: 0 0 0 14px;
-		}
-	}
-	// .franchise-partners__item-title
-	&__item-title {
-		padding: 31px 20px 17px 30px;
-		font-size: 24px;
-		font-weight: 700;
-		line-height: 24px;
-		letter-spacing: 1.08px;
-		@media (max-width: $md3+px) {
-			font-size: 20px;
-			line-height: 26px;
-			padding: 17px 20px 5px 20px;
-		}
-	}
-	// .franchise-partners__item-footer
-	&__item-footer {
-		padding: 18px 20px 26px 30px;
-		background-color: #e3fcff;
-		@media (max-width: $md3+px) {
-			padding: 8px 20px 18px 20px;
-		}
-	}
-	// .franchise-partners__item-name
-	&__item-name {
-		font-size: 20px;
-		font-weight: 600;
-		margin: 0px 0px 5px 0px;
-		letter-spacing: 0.9px;
-		@media (max-width: $md3+px) {
-			font-size: 16px;
-			line-height: 24px;
-		}
-	}
-	// .franchise-partners__item-year
-	&__item-year {
-		color: #fdc23d;
-		font-size: 16px;
-		font-weight: 500;
-		line-height: 24px;
-		letter-spacing: 0.72px;
-	}
-}
+
 //===================================================================================================================================
 .two-roads {
 	// .two-roads__container
@@ -2930,27 +2846,49 @@ body {
 	}
 	// .franchise-steps__title
 	&__title {
-		max-width: 390px;
-		line-height: 53px;
-		position: absolute;
-		text-align: left;
-		right: 50px;
-		top: -30px;
-		@media (max-width: $md1+px) {
-			right: 0;
-			top: 0;
-		}
 		@media (max-width: $md2+px) {
-			position: relative;
-			top: unset;
-			right: unset;
 			text-align: center;
 			max-width: unset;
-			margin: 0px 0px 60px 0px;
+			margin: 0px 0px 40px 0px;
 		}
 		@media (max-width: $md3+px) {
 			max-width: 265px;
-			margin: 0px auto 60px auto;
+			margin: 0px auto 20px auto;
+		}
+	}
+	&__undertitle {
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 400;
+		letter-spacing: 0.045em;
+		color: #151313;
+		max-width: 400px;
+		margin: 0px auto 48px auto;
+		text-align: center;
+		@media (max-width: $md3+px) {
+			margin: 0px auto 50px auto;
+		}
+	}
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -30px;
+		@media (max-width: $md3+px) {
+			max-width: 400px;
+			margin: 0px auto;
+		}
+	}
+	&__item-wrapper {
+		flex: 0 1 50%;
+		padding: 0 30px;
+		margin: 0px 0px 50px 0px;
+		@media (max-width: $md3+px) {
+			flex: 1 1 100%;
+			margin: 0px 0px 50px 0px;
+			padding: 0;
+			&:last-child {
+				margin: 0px 0px 0px 0px;
+			}
 		}
 	}
 	// .franchise-steps__item
@@ -2959,30 +2897,11 @@ body {
 		box-shadow: 0 0 11px 2px rgba(66, 60, 45, 0.16);
 		border-radius: 20px;
 		background-color: #ffffff;
-		margin: 0px 0px 30px 0px;
+
 		position: relative;
 		padding: 30px 50px 28px 30px;
 		@media (max-width: $md2+px) {
-			margin: 0px auto 60px auto;
 			padding: 40px 50px 28px 30px;
-		}
-		&:nth-child(2) {
-			margin: 0px 0px 30px 25%;
-			@media (max-width: $md1+px) {
-				margin: 0px 0px 30px 15%;
-			}
-			@media (max-width: $md2+px) {
-				margin: 0px auto 60px auto;
-			}
-		}
-		&:nth-child(3) {
-			margin: 0px 0px 0px 50%;
-			@media (max-width: $md1+px) {
-				margin: 0px 0px 0px 30%;
-			}
-			@media (max-width: $md2+px) {
-				margin: 0px auto 60px auto;
-			}
 		}
 	}
 	// .franchise-steps__item-index
@@ -2999,6 +2918,9 @@ body {
 		text-align: center;
 		text-transform: uppercase;
 		letter-spacing: 0.9px;
+		@media (max-width: $md1+px) {
+			right: -50px;
+		}
 		@media (max-width: $md2+px) {
 			left: 50%;
 			right: unset;

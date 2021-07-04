@@ -3502,73 +3502,106 @@ footer {
   padding: 90px 0 60px 0;
 }
 
-.start__container {
-  position: relative;
+.start__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -15px;
 }
 
-.start__bg {
-  position: absolute;
-  width: 568px;
-  top: -10px;
-  right: 0px;
-  z-index: -1;
+.start__col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 15px;
 }
 
-.start__bg img {
-  max-width: 100%;
-}
-
-.start__img {
-  position: absolute;
-  max-width: 541px;
-  top: -90px;
-  right: 0px;
-}
-
-.start__img img {
-  max-width: 100%;
+.start__col:nth-child(2) {
+  padding: 40px 15px 0px 15px;
 }
 
 .start__title {
   text-align: left;
-  margin: 0px 0px 39px 0px;
+  margin: 0px 0px 42px 0px;
+}
+
+.start__undertitle {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0.045em;
+  color: #151313;
+  margin: 0px 0px 21px 0px;
 }
 
 .start__list {
-  max-width: 527px;
+  margin: 0px 0px 17px 0px;
 }
 
-.start__list-item {
-  padding: 0px 0px 0px 50px;
+.start__author {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.045em;
+  color: #151313;
+}
+
+.start__img-cont {
   position: relative;
-  margin: 0px 0px 10px 0px;
 }
 
-._no-webp .start__list-item::before{
-  background: url("../img/icons/star.png") center center no-repeat; }
-
-.start__list-item::before {
+.start__img-cont::before {
   content: "";
   position: absolute;
-  top: 5px;
+  width: 100%;
+  height: 100%;
+  top: 0;
   left: 0;
-  width: 29px;
-  height: 29px;
+  z-index: -1;
+  background-color: #e3fcff;
+  border-radius: 20px;
+  -webkit-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
 }
 
-.start__list-item:nth-child(even)::before {
-  -webkit-transform: rotate(100deg);
-      -ms-transform: rotate(100deg);
-          transform: rotate(100deg);
-}
-
-.start__list-item_marker {
-  color: #fdc94d;
-  font-weight: 700;
+.start__img {
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 350px;
 }
 
 .franchise-video {
   padding: 70px 0 50px 0;
+}
+
+.franchise-video__container {
+  position: relative;
+}
+
+.franchise-video__bg-1 {
+  position: absolute;
+  max-width: 860px;
+  top: -310px;
+  left: -500px;
+  z-index: -1;
+}
+
+.franchise-video__bg-1 img {
+  max-width: 100%;
+}
+
+.franchise-video__bg-2 {
+  position: absolute;
+  max-width: 1082px;
+  top: -300px;
+  right: -730px;
+  z-index: -1;
+}
+
+.franchise-video__bg-2 img {
+  max-width: 100%;
 }
 
 .franchise-video__row {
@@ -3683,113 +3716,6 @@ footer {
   text-align: left;
 }
 
-.franchise-partners {
-  padding: 70px 0 50px;
-}
-
-.franchise-partners__container {
-  position: relative;
-}
-
-.franchise-partners__bg-1 {
-  position: absolute;
-  max-width: 860px;
-  top: -110px;
-  left: -500px;
-  z-index: -1;
-}
-
-.franchise-partners__bg-1 img {
-  max-width: 100%;
-}
-
-.franchise-partners__bg-2 {
-  position: absolute;
-  max-width: 1082px;
-  top: -100px;
-  right: -730px;
-  z-index: -1;
-}
-
-.franchise-partners__bg-2 img {
-  max-width: 100%;
-}
-
-.franchise-partners__title {
-  margin: 0px 0px 41px 0px;
-}
-
-.franchise-partners__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: -60px 0px 0px 0px;
-}
-
-.franchise-partners__item:first-child {
-  margin: 0;
-}
-
-.franchise-partners__item:nth-child(even) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-.franchise-partners__item:nth-child(even) .franchise-partners__item-info {
-  margin: 0px 30px 0px 0px;
-}
-
-.franchise-partners__item-avatar {
-  width: 250px;
-  height: 250px;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.franchise-partners__item-info {
-  margin: 0 0 0 30px;
-  -webkit-box-shadow: 0 0 11px 2px rgba(66, 60, 45, 0.16);
-          box-shadow: 0 0 11px 2px rgba(66, 60, 45, 0.16);
-  border-radius: 20px;
-  background-color: #ffffff;
-  max-width: 315px;
-  width: 100%;
-  overflow: hidden;
-}
-
-.franchise-partners__item-title {
-  padding: 31px 20px 17px 30px;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 1.08px;
-}
-
-.franchise-partners__item-footer {
-  padding: 18px 20px 26px 30px;
-  background-color: #e3fcff;
-}
-
-.franchise-partners__item-name {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0px 0px 5px 0px;
-  letter-spacing: 0.9px;
-}
-
-.franchise-partners__item-year {
-  color: #fdc23d;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.72px;
-}
-
 .two-roads {
   padding: 145px 0 210px;
 }
@@ -3890,13 +3816,32 @@ footer {
   position: relative;
 }
 
-.franchise-steps__title {
-  max-width: 390px;
-  line-height: 53px;
-  position: absolute;
-  text-align: left;
-  right: 50px;
-  top: -30px;
+.franchise-steps__undertitle {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.045em;
+  color: #151313;
+  max-width: 400px;
+  margin: 0px auto 48px auto;
+  text-align: center;
+}
+
+.franchise-steps__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -30px;
+}
+
+.franchise-steps__item-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 30px;
+  margin: 0px 0px 50px 0px;
 }
 
 .franchise-steps__item {
@@ -3905,17 +3850,8 @@ footer {
           box-shadow: 0 0 11px 2px rgba(66, 60, 45, 0.16);
   border-radius: 20px;
   background-color: #ffffff;
-  margin: 0px 0px 30px 0px;
   position: relative;
   padding: 30px 50px 28px 30px;
-}
-
-.franchise-steps__item:nth-child(2) {
-  margin: 0px 0px 30px 25%;
-}
-
-.franchise-steps__item:nth-child(3) {
-  margin: 0px 0px 0px 50%;
 }
 
 .franchise-steps__item-index {
@@ -6975,17 +6911,8 @@ footer {
     left: 100px;
   }
 
-  .franchise-steps__title {
-    right: 0;
-    top: 0;
-  }
-
-  .franchise-steps__item:nth-child(2) {
-    margin: 0px 0px 30px 15%;
-  }
-
-  .franchise-steps__item:nth-child(3) {
-    margin: 0px 0px 0px 30%;
+  .franchise-steps__item-index {
+    right: -50px;
   }
 
   .promo-franchise .promo__container {
@@ -7441,10 +7368,30 @@ footer {
     margin: 0px auto 0px auto;
   }
 
-  .start__img {
-    max-width: 300px;
-    top: 50px;
-    right: -50px;
+  .start__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .start__col {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+
+  .start__col:nth-child(2) {
+    padding: 0;
+    margin: 40px 0px 0px 0px;
+  }
+
+  .start__title {
+    text-align: center;
+  }
+
+  .start__img-cont {
+    max-width: 500px;
+    margin: 0px auto;
   }
 
   .franchise-video__row {
@@ -7465,10 +7412,6 @@ footer {
     max-width: 600px;
     text-align: center;
     margin: 0px auto 30px auto;
-  }
-
-  .franchise-partners__item {
-    margin: 0px 0px 0px 0px;
   }
 
   .two-roads {
@@ -7500,25 +7443,13 @@ footer {
   }
 
   .franchise-steps__title {
-    position: relative;
-    top: unset;
-    right: unset;
     text-align: center;
     max-width: unset;
-    margin: 0px 0px 60px 0px;
+    margin: 0px 0px 40px 0px;
   }
 
   .franchise-steps__item {
-    margin: 0px auto 60px auto;
     padding: 40px 50px 28px 30px;
-  }
-
-  .franchise-steps__item:nth-child(2) {
-    margin: 0px auto 60px auto;
-  }
-
-  .franchise-steps__item:nth-child(3) {
-    margin: 0px auto 60px auto;
   }
 
   .franchise-steps__item-index {
@@ -8739,24 +8670,36 @@ footer {
   }
 
   .start {
-    padding: 0px 0px 0px 0px;
+    padding: 40px 0;
   }
 
-  .start__bg {
-    width: 768px;
-    top: 20px;
-    right: -330px;
+  .start__col:nth-child(2) {
+    margin: 30px 0px 0px 0px;
+  }
+
+  .start__title {
+    margin: 0px 0px 25px 0px;
+  }
+
+  .start__undertitle {
+    font-size: 16px;
+    margin: 0px 0px 20px 0px;
   }
 
   .start__img {
-    max-width: 227px;
-    top: unset;
-    bottom: -150px;
-    right: 0;
+    min-height: 280px;
   }
 
   .franchise-video {
-    padding: 150px 0px 30px 0px;
+    padding: 30px 0px 30px 0px;
+  }
+
+  .franchise-video__bg-1 {
+    left: -700px;
+  }
+
+  .franchise-video__bg-2 {
+    right: -950px;
   }
 
   .franchise-video__decor {
@@ -8768,48 +8711,6 @@ footer {
   .franchise-video__title {
     max-width: 245px;
     margin: 0px auto 23px auto;
-  }
-
-  .franchise-partners__bg-1 {
-    left: -700px;
-  }
-
-  .franchise-partners__bg-2 {
-    right: -950px;
-  }
-
-  .franchise-partners__item {
-    margin: 15px 0px 0px 0px;
-  }
-
-  .franchise-partners__item:nth-child(even) .franchise-partners__item-info {
-    margin: 0px 14px 0px 0px;
-  }
-
-  .franchise-partners__item-avatar {
-    width: 170px;
-    height: 170px;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-  }
-
-  .franchise-partners__item-info {
-    margin: 0 0 0 14px;
-  }
-
-  .franchise-partners__item-title {
-    font-size: 20px;
-    line-height: 26px;
-    padding: 17px 20px 5px 20px;
-  }
-
-  .franchise-partners__item-footer {
-    padding: 8px 20px 18px 20px;
-  }
-
-  .franchise-partners__item-name {
-    font-size: 16px;
-    line-height: 24px;
   }
 
   .two-roads {
@@ -8850,7 +8751,28 @@ footer {
 
   .franchise-steps__title {
     max-width: 265px;
-    margin: 0px auto 60px auto;
+    margin: 0px auto 20px auto;
+  }
+
+  .franchise-steps__undertitle {
+    margin: 0px auto 50px auto;
+  }
+
+  .franchise-steps__items {
+    max-width: 400px;
+    margin: 0px auto;
+  }
+
+  .franchise-steps__item-wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin: 0px 0px 50px 0px;
+    padding: 0;
+  }
+
+  .franchise-steps__item-wrapper:last-child {
+    margin: 0px 0px 0px 0px;
   }
 
   .franchise-steps__item-list li:first-child {
@@ -9873,11 +9795,6 @@ footer {
     line-height: 16px;
   }
 
-  .franchise-partners__item-avatar {
-    width: 140px;
-    height: 140px;
-  }
-
   .two-roads__item-img {
     min-height: 230px;
   }
@@ -10024,8 +9941,6 @@ footer {
 ._webp .collage__img{ background: url(../img/content/collage.webp) center center no-repeat; }
 
 ._webp .collage__form-block{ background: url(../img/bgs/franchise/1.webp) center/cover no-repeat, #caf9ff; }
-
-._webp .start__list-item::before{ background: url(../img/icons/star.webp) center center no-repeat; }
 
 ._webp .franchise-video__play-button::after{ background: url(../img/icons/play-video.webp); }
 
