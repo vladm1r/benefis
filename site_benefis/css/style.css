@@ -4577,6 +4577,13 @@ footer {
   letter-spacing: 0.81px;
 }
 
+.reviews-item__age {
+  display: block;
+  margin: 10px 0px 0px 0px;
+  font-size: 18px;
+  color: #ffc200;
+}
+
 .reviews-item__text-cont {
   max-height: 150px;
   margin: 0px 0px 12px 0px;
@@ -6686,6 +6693,23 @@ footer {
 
 ._index .intro__tip-icon {
   margin: 0px 10px 0px 0px;
+}
+
+.children-page .intro {
+  overflow: hidden;
+  position: relative;
+}
+
+._no-webp .children-page .intro::after{
+  background: url("../img/decor/intro-bottom.png") center/cover no-repeat; }
+
+.children-page .intro::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+  width: 460px;
+  height: 145px;
 }
 
 @media (min-width: 768px) {
@@ -9683,6 +9707,12 @@ footer {
     display: -ms-flexbox;
     display: flex;
   }
+
+  .children-page .intro__img-m {
+    top: 180px;
+    bottom: unset;
+    right: -180px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -10038,6 +10068,8 @@ footer {
 ._webp .payment__data-cart-body{ background: url(../img/bgs/payment/1.webp) center/cover no-repeat, #caf9ff; }
 
 ._webp .payment__data-sber-body{ background: url(../img/bgs/payment/1.webp) center/cover no-repeat, #caf9ff; }
+
+._webp .children-page .intro::after{ background: url(../img/decor/intro-bottom.webp) center/cover no-repeat; }
 
 @media (max-width: 767.98px){
 
