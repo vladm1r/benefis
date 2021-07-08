@@ -52,6 +52,8 @@
 			order: 1;
 		}
 		@media (max-width: $md3+px) {
+			position: relative;
+			z-index: 2;
 			margin: 0px 0px 29px 0px;
 		}
 	}

@@ -8075,6 +8075,8 @@ footer {
   }
 
   .header__logo {
+    position: relative;
+    z-index: 2;
     margin: 0px 0px 29px 0px;
   }
 
@@ -8608,7 +8610,8 @@ footer {
   }
 
   .teather-page .intro__img-m {
-    right: -180px;
+    width: auto;
+    right: -10px;
     top: 200px;
   }
 
@@ -9223,8 +9226,9 @@ footer {
   }
 
   .orator-page .intro__img-m {
-    right: -180px;
-    top: 200px;
+    width: auto;
+    right: -10px;
+    top: 220px;
   }
 
   .children-page .header__logo {
@@ -9844,9 +9848,9 @@ footer {
   }
 
   .children-page .intro__img-m {
-    top: 180px;
+    top: 20px;
     bottom: unset;
-    right: -180px;
+    right: -10px;
   }
 
   .article-head-promo {
