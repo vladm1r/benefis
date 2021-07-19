@@ -6494,6 +6494,14 @@ footer {
   background: #fff;
 }
 
+.sum-form {
+  display: none;
+}
+
+.sum-form._active {
+  display: block;
+}
+
 .sum-form__subtitle {
   font-size: 18px;
   font-weight: 600;

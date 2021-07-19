@@ -660,20 +660,27 @@ let sberBtn = document.querySelector('.payment__type-item_sber');
 let sberBtnBody = document.querySelector('.payment__type-item-cont_sber');
 let sberFormCont = document.querySelector('.payment__data-sber-cont');
 
+let cartSumForm = document.querySelector('.sum-form_1');
+let sberSumForm = document.querySelector('.sum-form_2');
+
 if (cartBtn) {
 	cartBtn.addEventListener("click", function (e) {
 		cartBtnBody.classList.add('_active');
 		cartFormCont.classList.add('_active');
+		cartSumForm.classList.add('_active');
 		sberBtnBody.classList.remove('_active');
 		sberFormCont.classList.remove('_active');
+		sberSumForm.classList.remove('_active');
 	});
 }
 if (sberBtn) {
 	sberBtn.addEventListener("click", function (e) {
 		cartBtnBody.classList.remove('_active');
 		cartFormCont.classList.remove('_active');
+		cartSumForm.classList.remove('_active');
 		sberBtnBody.classList.add('_active');
 		sberFormCont.classList.add('_active');
+		sberSumForm.classList.add('_active');
 	});
 }
 

@@ -6355,6 +6355,10 @@ body {
 }
 
 .sum-form {
+	display: none;
+	&._active {
+		display: block;
+	}
 	// .sum-form__subtitle
 	&__subtitle {
 		font-size: 18px;
