@@ -193,7 +193,7 @@ if (map_container) {
 			let map_block = document.getElementById('ymap_lazy');
 			map_loaded = true;
 			map_block.setAttribute('src', map_block.getAttribute('data-src'));
-			map_block.removeAttribute('data_src');
+			map_block.removeAttribute('data-src');
 			console.log('YMAP LOADED');
 		}
 	}
