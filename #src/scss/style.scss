@@ -6141,10 +6141,6 @@ body {
 	// .payment__data-cart-cont
 	&__data-cart-cont {
 		padding: 20px 0px 30px 0px;
-		display: none;
-		&._active {
-			display: block;
-		}
 	}
 	// .payment__data-title
 	&__data-title {
@@ -6171,10 +6167,6 @@ body {
 	// .payment__data-sber-cont
 	&__data-sber-cont {
 		padding: 20px 0 30px;
-		display: none;
-		&._active {
-			display: block;
-		}
 	}
 	// .payment__data-sber-body
 	&__data-sber-body {
@@ -6355,10 +6347,6 @@ body {
 }
 
 .sum-form {
-	display: none;
-	&._active {
-		display: block;
-	}
 	// .sum-form__subtitle
 	&__subtitle {
 		font-size: 18px;
@@ -6845,6 +6833,13 @@ body {
 	}
 }
 //===================================================================================================================================
+.payment__form-1,
+.payment__form-2 {
+	display: none;
+	&._active {
+		display: block;
+	}
+}
 //===================================================================================================================================
 //===================================================================================================================================
 //===================================================================================================================================

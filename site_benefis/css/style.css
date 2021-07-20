@@ -6327,11 +6327,6 @@ footer {
 
 .payment__data-cart-cont {
   padding: 20px 0px 30px 0px;
-  display: none;
-}
-
-.payment__data-cart-cont._active {
-  display: block;
 }
 
 .payment__data-title {
@@ -6354,11 +6349,6 @@ footer {
 
 .payment__data-sber-cont {
   padding: 20px 0 30px;
-  display: none;
-}
-
-.payment__data-sber-cont._active {
-  display: block;
 }
 
 ._no-webp .payment__data-sber-body{
@@ -6492,14 +6482,6 @@ footer {
 
 .sber-form .input {
   background: #fff;
-}
-
-.sum-form {
-  display: none;
-}
-
-.sum-form._active {
-  display: block;
 }
 
 .sum-form__subtitle {
@@ -6838,6 +6820,16 @@ footer {
 .video-wrap iframe {
   border-radius: 20px;
   overflow: hidden;
+}
+
+.payment__form-1,
+.payment__form-2 {
+  display: none;
+}
+
+.payment__form-1._active,
+.payment__form-2._active {
+  display: block;
 }
 
 @media (min-width: 768px) {
