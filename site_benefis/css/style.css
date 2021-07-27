@@ -1535,7 +1535,7 @@ body.ie ._ibg img {
   color: inherit;
   font-weight: 600;
   display: inline-block;
-  padding: 20px 20px 18px 20px;
+  padding: 20px 15px 18px 15px;
   border-radius: 20px 20px 0 0;
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -6949,6 +6949,7 @@ footer {
 
   .menu__link {
     font-size: 14px;
+    padding: 20px 12px 18px 12px;
   }
 
   .footer__subtitle {
