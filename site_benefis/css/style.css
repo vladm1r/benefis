@@ -6832,6 +6832,48 @@ footer {
   display: block;
 }
 
+.how-online {
+  padding: 100px 0 20px;
+}
+
+.how-online__title {
+  margin-bottom: 40px;
+}
+
+.how-online__undertitle {
+  text-align: center;
+  font-size: 22px;
+  line-height: 120%;
+  max-width: 900px;
+  margin: 0px auto 40px auto;
+}
+
+.how-online__list {
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+.how-online__item {
+  margin: 0px 0px 30px 0px;
+  letter-spacing: 0.72px;
+}
+
+.how-online__item:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.how-online__item-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%;
+  margin: 0px 0px 10px 0px;
+}
+
+.how-online__item-text {
+  line-height: 120%;
+  font-size: 16px;
+}
+
 @media (min-width: 768px) {
   .articles-item_big .articles-item__banner {
     min-height: 413px;
@@ -9982,6 +10024,25 @@ footer {
   .video-wrap {
     max-width: 560px;
   }
+
+  .how-online {
+    padding: 30px 0;
+  }
+
+  .how-online__title {
+    margin-bottom: 20px;
+  }
+
+  .how-online__undertitle {
+    font-size: 16px;
+    margin: 0px auto 30px auto;
+    max-width: 420px;
+  }
+
+  .sertificate__container {
+    max-width: 450px;
+    margin: 0px auto;
+  }
 }
 
 @media (max-width: 600px) {
@@ -10280,6 +10341,10 @@ footer {
 
   .payment__step-cont {
     display: none;
+  }
+
+  .how-online__undertitle {
+    font-size: 14px;
   }
 }
 
